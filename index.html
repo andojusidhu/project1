@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+  <script>
+      const participants = [
+  "Alice",
+  "Bob",
+  "Charlie",
+  "David",
+  "Eve",
+  "Frank",
+  "Grace",
+];
+
+// Store the total number of participants
+const totalParticipants = participants.length;
+
+// Use an if-else condition to check for participants
+if (totalParticipants === 0) {
+  console.log("No participants found. Please register first!");
+} else {
+  // Generate a random winner's index
+  const winnerIndex = Math.floor(Math.random() * totalParticipants);
+
+  // Print the winner's name
+  console.log(`The lucky winner is: ${participants[winnerIndex]}!`);
+      }
+
+  </script>
 </body>
 </html>
